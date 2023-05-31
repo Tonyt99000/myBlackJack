@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(44, 144, 44);
+    color: goldenrod;
+    text-align: center;
+
+}
+p {
+    color: white;
+    font-weight: bolder;
+}
+.button1 {
+    display: flex;
+    margin: 6px auto;
+    width: 150px; 
+    color: rgb(44, 144, 44);;
+    padding-left: 42px;
+    
+}
+.button2 {
+    margin: 6px auto;
+    width: 150px; 
+    color: rgb(44, 144, 44);;
+    padding-left: 8px;
+}
+
+#theReset {
+    margin-top: 85px;
+}
