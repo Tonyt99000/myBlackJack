@@ -20,6 +20,7 @@ function startGame(){
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     renderGame()
+    document.body.style.backgroundColor = "blue";
 }
 
 function renderGame(){
@@ -49,6 +50,7 @@ function getCard(){
     cards.push(card)
     renderGame()
     }
+    document.body.style.backgroundColor = "red";
 }
 
 
