@@ -7,6 +7,9 @@ let cardsEl = document.getElementById("cards-el")
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 
+/* let aceEl = document.getElementById("ace-img")
+let randoNumber = Math.floor(Math.random() * 13) +1 */
+
 function getRandomCard(){
     let randoNumber = Math.floor(Math.random() * 13) +1
     if (randoNumber > 10){
@@ -16,7 +19,6 @@ function getRandomCard(){
     } else {
         return randoNumber
     }
-
 }
 
 function startGame(){
@@ -25,6 +27,9 @@ function startGame(){
     let cardTwo = getRandomCard()
     cards = [cardOne, cardTwo]
     sum = cardOne + cardTwo
+    /* if(randoNumber < 4){
+        aceEl.src = "CardImages/ace-spades.jpeg";
+    } */
     renderGame()
 }
 
