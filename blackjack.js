@@ -7,11 +7,14 @@ let cardsEl = document.getElementById("cards-el")
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 
-/* let aceEl = document.getElementById("ace-img")
-let randoNumber = Math.floor(Math.random() * 13) +1 */
+let aceEl = document.getElementById("ace-img")
+/*let randoNumber = Math.floor(Math.random() * 13) +1 */
 
 function getRandomCard(){
     let randoNumber = Math.floor(Math.random() * 13) +1
+    /* if(randoNumber < 4){
+        aceEl.src = "CardImages/ace-spades.jpeg";
+    } */
     if (randoNumber > 10){
         return 10
     } else if (randoNumber === 1){
@@ -67,3 +70,6 @@ function resetGame(){
     hasBlackJack = false
 
 }
+
+
+
