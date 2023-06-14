@@ -7,14 +7,18 @@ let cardsEl = document.getElementById("cards-el")
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 
+
 let aceEl = document.getElementById("ace-img")
-/*let randoNumber = Math.floor(Math.random() * 13) +1 */
+/* let randoNumber = Math.floor(Math.random() * 13) +1 */
+
 
 function getRandomCard(){
     let randoNumber = Math.floor(Math.random() * 13) +1
-    /* if(randoNumber < 4){
-        aceEl.src = "CardImages/ace-spades.jpeg";
+    
+    /* if(randoNumber < 10){
+        aceEl.src = "CardImages/ace-spades.jpeg"; 
     } */
+
     if (randoNumber > 10){
         return 10
     } else if (randoNumber === 1){
@@ -30,6 +34,7 @@ function startGame(){
     let cardTwo = getRandomCard()
     cards = [cardOne, cardTwo]
     sum = cardOne + cardTwo
+
     /* if(randoNumber < 4){
         aceEl.src = "CardImages/ace-spades.jpeg";
     } */
@@ -51,7 +56,9 @@ function renderGame(){
         message = " you loose "
         isAlive = false
     }
+    /* message = "joes crabshack" */
     messageEl.textContent = message
+    
 }
 
 function getCard(){
@@ -62,6 +69,7 @@ function getCard(){
     renderGame()
     }
 }
+
 function resetGame(){
     cards = 0
     cardsEl.textContent = "Your Cards: "
@@ -69,6 +77,11 @@ function resetGame(){
     isAlive = true
     hasBlackJack = false
 
+    /* aceEl.remove() */
+        /* OR */
+    
+    /* let PimgEl = document.getElementById("p-img")
+        PimgEl.textContent = "yo momma" */
 }
 
 
