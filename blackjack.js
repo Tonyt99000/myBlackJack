@@ -84,10 +84,10 @@ function resetGame(){
     hasBlackJack = false
 
     /* aceEl.remove() */
-        /* OR */
+    /* OR */
     
-    /* let PimgEl = document.getElementById("p-img")
-        PimgEl.textContent = "yo momma" */
+    /* let containerEl = document.getElementById("cardContainer")
+        containerEl.textContent = "yo momma" */
 }
 
 
