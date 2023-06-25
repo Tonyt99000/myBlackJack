@@ -13,7 +13,7 @@ let aceEl = document.getElementById("ace-img")
 
 
 function getRandomCard(){
-    let randoNumber = Math.floor(Math.random() * 13) +1
+    /* let */ randoNumber = Math.floor(Math.random() * 13) +1
     
     /* if(randoNumber < 10){
         aceEl.src = "CardImages/ace-spades.jpeg"; 
@@ -47,8 +47,12 @@ function renderGame(){
         cardsEl.textContent += cards[m] + " "
     }
     sumEl.textContent = "Sum: " + sum
+
+   /*  if(randoNumber < 4){
+        aceEl.src = "CardImages/ace-spades.jpeg"; */
     if (sum <= 20) {
         message = "Do you want to Draw another card?"
+
     } else if (sum === 21) {
         message = "woohooo!!! YOUVE GOT BLACK JACk FOO!"
         hasBlackJack = true
@@ -56,8 +60,10 @@ function renderGame(){
         message = " you loose "
         isAlive = false
     }
+    
     /* message = "joes crabshack" */
     messageEl.textContent = message
+    
     
 }
 
