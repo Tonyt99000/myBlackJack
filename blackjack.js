@@ -82,7 +82,7 @@ function resetGame(){
     sumEl.textContent = "Sum: " + 0
     isAlive = true
     hasBlackJack = false
-
+    messageEl.textContent = ""
     /* aceEl.remove() */
     /* OR */
     
