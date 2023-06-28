@@ -31,3 +31,7 @@ p {
     height: 80px;
     width: 65px;
 }
+
+#cardContainer{
+    border: 2px blue solid;
+}
